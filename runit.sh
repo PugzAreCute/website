@@ -1,5 +1,6 @@
 #!/bin/bash
-for j in `ps -ef | grep runit.sh | awk '{print $2}'``;do
+for j in `ps -ef | grep runit.sh | awk '{print $2}'`;
+do
     if [$$ != j];
     then
         kill j
