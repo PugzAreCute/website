@@ -12,4 +12,5 @@ npm ci --omit-dev
 
 #RUNIT!
 chmod +x ../runit.sh
-BUILD_ID=JENKINS_NO_KILL ../runit.sh & disown
+export BUILD_ID=JENKINS_NO_KILL
+../runit.sh & disown
