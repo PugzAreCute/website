@@ -1,0 +1,22 @@
+:root {
+	--backdrop: #231123;
+	--accent-pink: #82204A;
+	--border: #91C4F2;
+	--important: #E8DB7D;
+	--text: #EFF7FF;
+	--border-radius: 0.25em
+}
+@font-face {
+    font-family: 'PixelifySans';
+    src: url('PixelifySans-VariableFont_wght.ttf');
+}
+*{
+	padding: 0;
+	overflow: scroll;
+	margin: 0;
+	background-color: var(--backdrop);
+	color: var(--text);
+	font-family: "PixelifySans", monospace !important;
+} 
+body{
+}
