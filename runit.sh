@@ -1,6 +1,7 @@
 #!/bin/bash
 pkill runit.sh
 pkill node
+cd production_out
 while [ true ]; do
     echo "(Re)Starting server..."
     BUILD_ID=JENKINS_NO_KILL node build

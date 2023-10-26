@@ -12,4 +12,5 @@ npm ci --omit-dev
 
 #RUNIT!
 chmod +x ../runit.sh
-daemonize -E BUILD_ID=dontKillMe ../runit.sh
+cd ..
+daemonize -E BUILD_ID=dontKillMe $(pwd)/runit.sh
