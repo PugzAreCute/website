@@ -1,6 +1,10 @@
 #!/bin/bash
-pkill runit.sh
-pkill node
+for j in `pgrep runit.sh`;do
+    if [$$ != j];
+    then
+        kill j
+    fi
+done
 cd production_out
 while [ true ]; do
     echo "(Re)Starting server..."
