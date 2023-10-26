@@ -1,4 +1,4 @@
-#!/bin.bash
+#!/bin/bash
 while [ true ]; do
     echo "(Re)Starting server..."
     node build
