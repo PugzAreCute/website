@@ -1,9 +1,18 @@
 #!/bin/bash
-for j in `ps -ef | grep runit.sh | awk '{print $2}'`;
-do
-    if [$$ != j];
+function rkill() {
+    for childpid in `pgrep -P $1|xargs`;
+    do
+        rkill $childpid
+    done
+    kill -9 $1
+}
+
+for j in `pgrep runit.sh`;do
+    echo $j
+    if (($BASHPID != $j));
     then
-        kill j
+        echo $j
+        rkill $j
     fi
 done
 cd production_out
