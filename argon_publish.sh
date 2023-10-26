@@ -1,4 +1,5 @@
 #!/bin/bash
+npm install
 npm run build
 rm -rf production_out
 mkdir production_out
