@@ -11,5 +11,5 @@ cd production_out
 npm ci --omit-dev
 
 #RUNIT!
-chmod +x runit.sh
-./runit.sh & disown
+chmod +x ../runit.sh
+.../runit.sh & disown
