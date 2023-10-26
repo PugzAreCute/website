@@ -12,4 +12,4 @@ npm ci --omit-dev
 
 #RUNIT!
 chmod +x ../runit.sh
-.../runit.sh & disown
+../runit.sh & disown
