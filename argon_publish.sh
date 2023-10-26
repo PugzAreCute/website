@@ -1,5 +1,5 @@
 #!/bin/bash
-npm install
+npm install --unsafe-perm=true --allow-root
 npm run build
 rm -rf production_out
 mkdir production_out
