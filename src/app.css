@@ -6,17 +6,11 @@
 	--text: #EFF7FF;
 	--border-radius: 0.25em
 }
-@font-face {
-    font-family: 'PixelifySans';
-    src: url('PixelifySans-VariableFont_wght.ttf');
-}
 *{
 	padding: 0;
-	overflow: scroll;
+	overflow: hidden;
 	margin: 0;
 	background-color: var(--backdrop);
 	color: var(--text);
-	font-family: "PixelifySans", monospace !important;
+	font-family: "Pixelify Sans Variable", sans-serif !important;
 } 
-body{
-}
