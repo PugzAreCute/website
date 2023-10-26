@@ -1,0 +1,15 @@
+<svelte:head>
+    <title>Contact me!</title> 
+</svelte:head>
+
+<h1>Contact me!</h1>
+<ul>
+    <li><a href="mailto:me@pugzarecute.com">E-Mail: me@pugzarecute.com</a></li>
+    <li><a href="https://discord.gg/geNRqMu5XW">Discord: PugsMods Discord</a></li>
+</ul>
+<style>
+    a{
+        font-size: x-large;
+        text-decoration-color: var(--important);
+    }
+</style>
