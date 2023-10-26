@@ -1,5 +1,6 @@
 #!/bin/bash
 npm install --unsafe-perm=true --allow-root
+npm install vite --unsafe-perm=true --alow-root
 npm run build
 rm -rf production_out
 mkdir production_out
