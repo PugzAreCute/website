@@ -1,11 +1,14 @@
 	<nav>
 		<span>PugzAreCute</span>
 		<div>
-			<a href="/">CI server</a>
+			<a href="/">Home</a>
+			<a href="https://pugzarecute.com/ci">CI server</a>
 			<a href="/contact">Contact</a>
-			<a href="uptime.pugzarecute.com">Server Uptime</a>
+			<a href="https://uptime.pugzarecute.com">Server Uptime</a>
 		</div>
 	</nav>
+
+	<!-- add padding between them at sometime-->
 
 <style>
 	nav {
@@ -23,9 +26,7 @@
 	}
 
 	span {
-		font-weight: 100;
 		font-size: 3em;
-		text-decoration: none;
 		padding-bottom: 10px;
 	}
 
