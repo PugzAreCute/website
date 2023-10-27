@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "Hello from runit.sh! If you see this in the jenkins build, something messed up"
 function rkill() {
     for childpid in `pgrep -P $1|xargs`;
     do
