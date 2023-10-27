@@ -1,8 +1,8 @@
 <script lang="ts">
-	import env from '$env/static/public';
+	import {PUBLIC_GIT_COMMIT} from '$env/static/public'
 </script>
 <footer>
-	<p> Revision {env.PUBLIC_GIT_COMMIT} </p>
+	<p> Revision { PUBLIC_GIT_COMMIT } </p>
 </footer>
 
 <style>
