@@ -3,7 +3,24 @@
 	import Navbar from '$lib/Navbar.svelte';
 	import Footer from '$lib/Footer.svelte';
 	import '@fontsource-variable/pixelify-sans';
+	import type { PageData } from './$types';
+	export let data: PageData;
 </script>
+<svelte:head>
+	<!-- Required OG properties -->
+	<meta property="og:title" content="{ data.og.title }" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="{ data.og.image }" />
+	<meta property="og:url" content="{ data.og.url }" />
+
+	<!-- Optional OG properties -->
+	<meta property="og:description" content="{ data.og.description }" />
+	<meta property="og:site_name" content="{ data.og.site_name }" />
+
+	<!-- Non-Standard Widely-Used properties-->
+	<meta name="msapplication-navbutton-color" content="{ data.og.color }">
+	<meta name="theme-color" content="{ data.og.color }">
+</svelte:head>
 
 
 <div>
