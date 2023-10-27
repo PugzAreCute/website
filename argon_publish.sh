@@ -1,5 +1,5 @@
 #!/bin/bash
-LOGFILE="/tmp/"+$(date +%Y.%m.%d-%H.%M.%S.log)
+LOGFILE="/tmp/runit_logs_$(date +%Y.%m.%d-%H.%M.%S.log)"
 echo "Using logfile $LOGFILE after fork"
 echo "Run NPM install"
 npm install --unsafe-perm=true --allow-root
@@ -19,7 +19,8 @@ cd production_out
 echo "Install Non-Developer dependencies in node environment via NPM"
 npm ci --omit-dev
 
-echo "FORKING! No more output will be given. This Jenkins compile will complete. \n The child will run as an independant process logging to $LOGFILE"
+echo "FORKING! No more output will be given. This Jenkins compile will complete.:"
+echo "The child will run as an independant process logging to $LOGFILE"
 chmod +x ../runit.sh
 cd ..
 export BUILD_ID=dontKillMe 
