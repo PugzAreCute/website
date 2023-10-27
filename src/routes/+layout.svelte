@@ -4,7 +4,10 @@
 	import Footer from '$lib/Footer.svelte';
 	import '@fontsource-variable/pixelify-sans';
 	import type { PageData } from './$types';
-	export let data: PageData;
+
+	import { page } from '$app/stores';
+	let data = $page.data;
+
 </script>
 <svelte:head>
 	<!-- Required OG properties -->
