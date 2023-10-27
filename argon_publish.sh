@@ -4,6 +4,8 @@ echo "PUBLIC_GIT_COMMIT=\"$GIT_COMMIT\"" > .env
 echo "Using logfile $LOGFILE after fork"
 echo "Run NPM install"
 npm install --unsafe-perm=true --allow-root
+echo "Run NPM update"
+npm update
 echo "Run NPM install vite"
 npm install vite --unsafe-perm=true --alow-root
 echo "Building production release with NPM"
