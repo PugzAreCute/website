@@ -10,6 +10,10 @@
 <style>
     a{
         font-size: x-large;
-        text-decoration-color: var(--important);
+        text-decoration: none;
+    }
+    li{
+        border-bottom: 1px dashed var(--important);
+        text-align: center;
     }
 </style>
