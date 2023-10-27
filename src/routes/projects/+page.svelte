@@ -29,6 +29,9 @@ so like the card
 |dotted border, rounded corner
 |name
 |ghub link
+| if commissioned, comissioner name
+
+have 2 components, Project and CommisionedComponent(have stuff like commissioner name)
 
 onhover: zoom in, shadow. onclick, redirect to curse.
 -->
