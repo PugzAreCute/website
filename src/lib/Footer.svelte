@@ -1,5 +1,8 @@
+<script lang="ts">
+	import PUBLIC_GIT_COMMIT from '$env/static/public';
+</script>
 <footer>
-	<p> Revision GIT_REVISION </p>
+	<p> Revision {PUBLIC_GIT_COMMIT} </p>
 </footer>
 
 <style>

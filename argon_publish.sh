@@ -1,5 +1,6 @@
 #!/bin/bash
 LOGFILE="/tmp/runit_logs_$(date +%Y.%m.%d-%H.%M.%S.log)"
+export PUBLIC_GIT_COMMIT = $GIT_COMMIT
 echo "Using logfile $LOGFILE after fork"
 echo "Run NPM install"
 npm install --unsafe-perm=true --allow-root
