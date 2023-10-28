@@ -4,7 +4,7 @@
 		<a href="/">Home</a>
 		<a href="/ci">CI server</a>
 		<a href="/contact">Contact</a>
-		<a href="https://uptime.pugzarecute.com">Server Uptime</a>
+		<a href="https://uptime.pugzarecute.com/status/argon">Server Uptime</a>
 	</div>
 </nav>
 <style>
