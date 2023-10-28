@@ -9,7 +9,7 @@ npm update
 echo "Run NPM install vite"
 npm install vite --unsafe-perm=true --alow-root
 echo "Building production release with NPM"
-npm run build
+NO_COLOR=true npm run build
 echo "Starting packaging"
 rm -rf production_out
 mkdir production_out
