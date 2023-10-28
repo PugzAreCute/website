@@ -1,12 +1,33 @@
 <nav>
 	<span>PugzAreCute</span>
-	<div>
+	<div style="--navbar-box-rotation: { rotation }deg" bind:this={ navigationLinks }>
 		<a href="/">Home</a>
 		<a href="/ci">CI server</a>
 		<a href="/contact">Contact</a>
 		<a href="https://uptime.pugzarecute.com/status/argon">Server Uptime</a>
 	</div>
 </nav>
+<script lang="ts">
+	let navigationLinks: HTMLElement;
+	import { onMount } from "svelte";
+	onMount(() => {
+		navigationLinks.querySelectorAll("a").forEach((e: HTMLElement) =>{
+		e.addEventListener("mouseleave",setRandomRot)
+	})
+	})
+	function rotationRandom(): number{
+		let max = 15;
+		let min = -15;
+		let out = Math.floor(Math.random() * (max-min) + min);
+		return out;
+	}
+	let rotation = rotationRandom();
+
+	function setRandomRot(event: MouseEvent){
+		rotation = rotationRandom()
+	}
+
+</script>
 <style>
 	nav {
 		display: flex;
@@ -41,6 +62,6 @@
 		transition-duration: var(--animation-duration);
 	}
 	a:hover{
-		transform: scale(1.1) rotateZ(10deg) /* Make this random at some point */
+		transform: scale(1.1) rotateZ(var(--navbar-box-rotation))
 	}
 </style>
