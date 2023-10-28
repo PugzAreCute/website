@@ -50,9 +50,9 @@
 	}
 
 	a {
-		margin-left: 7px !important;
 		margin: 15px;
-		margin-right: 3px !important;
+		margin-left: 5px;
+		margin-right: 5px;
 		color: var(--text);
 		text-decoration: none;
 		background-color: var(--accent-pink);
@@ -63,5 +63,8 @@
 	}
 	a:hover{
 		transform: scale(1.1) rotateZ(var(--navbar-box-rotation))
+	}
+	div:last-child{
+		margin-right: 15px;
 	}
 </style>
