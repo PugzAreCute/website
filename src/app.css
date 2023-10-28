@@ -4,7 +4,8 @@
 	--border: #91C4F2;
 	--important: #E8DB7D;
 	--text: #EFF7FF;
-	--border-radius: 0.25em
+	--border-radius: 0.25em;
+	--animation-duration: 250ms
 }
 *{
 	padding: 0;

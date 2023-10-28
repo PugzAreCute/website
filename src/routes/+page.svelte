@@ -12,8 +12,13 @@
 </p>
 <style>
     .profile_photo{
-        border-radius: 1em;
+        border-radius: calc(var(--border-radius)*3);
         width: 10%;
+        transition-duration: var(--animation-duration);
+        margin: 0.2%;
+    }
+    .profile_photo:hover{
+        transform: scale(1.1) rotateZ(10deg) /* Make this random at some point */
     }
     p{
         font-size: large;
