@@ -13,7 +13,6 @@
         text-decoration: none;
     }
     li{
-        border-bottom: 1px dashed var(--important);
         text-align: center;
         margin: 5%;
         transition-duration: var(--animation-duration);

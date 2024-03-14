@@ -1,5 +1,5 @@
 <svelte:head>
-    <title>PugzAreCute?</title> 
+    <title>PugzAreCute!</title> 
 </svelte:head>
 <script lang="ts">
 	let body: HTMLElement;
