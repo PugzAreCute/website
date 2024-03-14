@@ -55,7 +55,6 @@
 		margin-right: 5px;
 		color: var(--text);
 		text-decoration: none;
-		background-color: var(--accent-pink);
 		padding: 5px;
 		border-radius: var(--border-radius);
 		border: 2px dashed var(--border);
