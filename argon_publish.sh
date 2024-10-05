@@ -3,11 +3,11 @@ LOGFILE="/tmp/runit_logs_$(date +%Y.%m.%d-%H.%M.%S.log)"
 echo "PUBLIC_GIT_COMMIT=\"$GIT_COMMIT\"" > .env
 echo "Using logfile $LOGFILE after fork"
 echo "Run NPM install"
-npm install --unsafe-perm=true --allow-root
+node --dns-result-order=ipv4first /usr/bin/npm install --unsafe-perm=true --allow-root
 echo "Run NPM update"
-npm update
+node --dns-result-order=ipv4first /usr/bin/npm update
 echo "Run NPM install vite"
-npm install vite --unsafe-perm=true --alow-root
+node --dns-result-order=ipv4first /usr/bin/npm install vite --unsafe-perm=true --alow-root
 echo "Building production release with NPM"
 NO_COLOR=true npm run build
 echo "Starting packaging"
@@ -20,7 +20,7 @@ echo "Packaging done"
 cd production_out
 
 echo "Install Non-Developer dependencies in node environment via NPM"
-npm ci --omit-dev
+node --dns-result-order=ipv4first /usr/bin/npm ci --omit-dev
 
 echo "FORKING! No more output will be given. This Jenkins compile will complete."
 echo "The child will run as an independant process logging to $LOGFILE"
